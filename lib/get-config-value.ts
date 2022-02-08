@@ -23,6 +23,9 @@ const siteConfig = {
 
 export function getSiteConfig<T>(key: string, defaultValue?: T): T {
   const value = siteConfig[key]
+  console.log(
+    `isPreviewImageSupportEnabled: ${siteConfig.isPreviewImageSupportEnabled}`
+  )
 
   if (value !== undefined) {
     return value
