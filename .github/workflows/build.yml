@@ -16,8 +16,8 @@ jobs:
       - run: yarn install --frozen-lockfile
       - shell: bash
         env:
-          REDIS_HOST: ${{ secrets.REDIS_HOST }}
-        run: echo "aaaaa"
+          REDIS_HOST: hosttest
+        run: echo "$REDIS_HOST"
       - name: build
         env:
           REDIS_HOST: ${{ secrets.REDIS_HOST }}
