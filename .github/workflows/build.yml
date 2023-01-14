@@ -17,7 +17,7 @@ jobs:
       - shell: bash
         env:
           REDIS_HOST: ${{ secrets.REDIS_HOST }}
-        run: echo "$REDIS_HOST"
+        run: echo "aaaaa"
       - name: build
         env:
           REDIS_HOST: ${{ secrets.REDIS_HOST }}
